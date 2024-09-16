@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #202124;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-box {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Assets/roadmapbg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-box h1 {
+    font-size: 36px;
+    color: #202124;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-box p {
+    color: #202124;
+    margin-top: 20px; /* Adjusted margin */
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(80% + 20px); /* Adjusted width with additional margin */
+    margin: 0 auto;
+    margin-top: -50px; /* Adjusted negative margin to overlap with header box */
+    position: relative;
+    z-index: 2; /* Ensure buttons are above header box */
+}
+
+
+.button {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards; /* Apply entrance animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.button-strip {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #184e77;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.button:hover .button-strip {
+    transform: scaleX(1);
+}
+
+.button-content span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button-content i {
+    font-size: 40px;
+    color: #184e77;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #f1f3f4;
+    font-weight: 300;
+    margin-top: 20px;
+  }
