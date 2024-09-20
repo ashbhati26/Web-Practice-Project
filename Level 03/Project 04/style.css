@@ -1,0 +1,220 @@
+@font-face {
+    font-family: domain;
+    src: url(./domain.ttf);
+}
+@font-face {
+    font-family: canopee;
+    src: url(./canopee.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #222;
+    overflow-x: hidden;
+}
+#page1{
+    height: 150vh;
+    width: 100vw;
+    background-color: #c4bcb3;
+    position: relative;
+    overflow: hidden;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+}
+#nav img{
+    height: 30px;
+    width: 30%;
+}
+#nav h5{
+    font-size: 20px;
+    font-weight: 100;
+    width: 30%;
+}
+#nav i{
+    font-size: 20px;
+    width: 30%;
+    text-align: right;
+}
+#elems{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+#elem1{
+    width: 30%;
+    height: 100%;
+}
+#elem1 #image-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+#image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+#image-div:hover img{
+    scale: 1.1;;
+}
+#elem1 h4{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: canopee;
+}
+#elem1 h4 span{
+    background-color: #B43B12;
+    color: #C4BCB3;
+    font-weight: 100;
+    padding: 4px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+#elem1 p{
+    font-size: 20px;
+    font-family: domain;
+    font-weight: 100;
+    color: #656565;
+}
+#elem2{
+    width: 30%;
+    height: 100%;
+    border-right: 2px solid #acacac;
+    padding: 20px 60px;
+    text-align: center;
+    border-left: 2px solid #a5a5a5;
+}
+#elem2 h2{
+    font-family: canopee;
+    font-size: 60px;
+    font-weight: 100;
+}
+#elem2 h3{
+    font-family: domain;
+    font-size: 35px;
+    color: #2f2f2f;
+    font-weight: 100;
+    margin: 20px 0;
+}
+#elem2 h5 {
+    font-family: domain;
+    font-size: 20px;
+    color: #2f2f2f;
+    font-weight: 100;
+}
+#elem3{
+    width: 30%;
+    height: 100%;
+}
+#elem3 #image-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+#elem3 h4{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: canopee;
+}
+#elem3 h4 span{
+    background-color: #b43b12;
+    color: #c4bcb3;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 5px;
+}
+#elem3 p {
+    font-size: 20px;
+    font-family: domain;
+    font-weight: 100;
+    color: #656565;
+}
+#page1 h1{
+    font-size: 520px;
+    letter-spacing: -20px;
+    font-weight: 100;
+    font-family: canopee;
+    background-color: #1c1c19;
+    color: #c4bcb3;
+    line-height: 500px;
+    width: 96%;
+    margin-left: 2%;
+}
+
+#page2{
+    height: 150vh;
+    width: 100%;
+    background-color: #C4BCB3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#page3{
+    padding: 25px 0;
+    width: 100%;
+    background-color: #C4BCB3;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#page3::-webkit-scrollbar{
+    display: none;
+}
+#page3 h1{
+    font-size: 90px;
+    font-family: domain;
+    font-weight: 100;
+    display: inline-flex;
+    animation-timing-function: linear;
+    margin-right: 30px;
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#page3 h1 span{
+    font-family: canopee;
+    background-color: #1b1b1b;
+    color: #C4BCB3;
+    border-radius: 20px;
+    margin-left: 5px;
+    padding: 5px 20px;
+}
+#page4{
+    height: 100px;
+    width: 100%;
+    background-color: #C4BCB3;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 34px));
+    }
+}
+#page3:hover h1{
+    animation-play-state: paused;
+}
