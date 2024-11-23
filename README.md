@@ -14,7 +14,6 @@ A fun and interactive practice project showcasing HTML, CSS, and JavaScript skil
 - **Animations**: Smooth transitions and visual effects for an enhanced user experience.
 - **Responsive Layout**: A design that adapts to various screen sizes and devices.
 - **Dynamic Content**: JavaScript-driven content and actions for a more interactive experience.
----
 
 ## Getting Started
 
